@@ -37,10 +37,15 @@ const images = [
 
 let current = 0;
 
-setInterval(() => {
+function nextPhoto() {
     current = (current + 1) % images.length;
     document.getElementById("slide").src = images[current];
-}, 3000);
+}
+
+function prevPhoto() {
+    current = (current - 1 + images.length) % images.length;
+    document.getElementById("slide").src = images[current];
+}
 
 function openGift() {
     document.getElementById("giftBox").style.display = "none";
