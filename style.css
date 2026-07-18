@@ -10,6 +10,10 @@ body{
     overflow-x:hidden;
     min-height:100vh;
     color:#fff;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 
 #giftBox,
